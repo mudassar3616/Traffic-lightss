@@ -1,0 +1,219 @@
+   * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #101827;
+            color: white;
+            min-height: 100vh;
+        }
+
+        /* Navbar */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            border-bottom: 1px solid #293548;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav span {
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        /* Hero Section */
+
+        .hero {
+            text-align: center;
+            padding: 65px 20px 30px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            color: #94a3b8;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        /* Main Container */
+
+        .container {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #1e293b;
+            border-radius: 20px;
+            border: 1px solid #334155;
+        }
+
+        .container h2 {
+            margin-bottom: 25px;
+        }
+
+        /* Traffic Light */
+
+        .traffic-light {
+            background: #080f1c;
+            padding: 20px;
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            border: 3px solid #475569;
+        }
+
+        .light {
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            background: #263244;
+            border: 4px solid #334155;
+            transition: 0.3s;
+        }
+
+        .red.active {
+            background: #ef4444;
+            box-shadow: 0 0 30px #ef4444;
+        }
+
+        .yellow.active {
+            background: #facc15;
+            box-shadow: 0 0 30px #facc15;
+        }
+
+        .green.active {
+            background: #22c55e;
+            box-shadow: 0 0 30px #22c55e;
+        }
+
+        /* Status */
+
+        .status {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .status h2 {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .status p {
+            color: #94a3b8;
+        }
+
+        /* Buttons */
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        button {
+            padding: 13px 25px;
+            border: none;
+            border-radius: 50px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-4px);
+            opacity: 0.85;
+        }
+
+        .red-btn {
+            background: #ef4444;
+            color: white;
+        }
+
+        .yellow-btn {
+            background: #facc15;
+            color: #111827;
+        }
+
+        .green-btn {
+            background: #22c55e;
+            color: white;
+        }
+
+        /* Traffic Road */
+
+        .road {
+            margin-top: 40px;
+            width: 100%;
+            height: 90px;
+            background: #080f1c;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .road-line {
+            width: 100%;
+            border-top: 4px dashed #facc15;
+        }
+
+        .car {
+            position: absolute;
+            font-size: 35px;
+            left: 10%;
+            transition: left 1.5s ease;
+        }
+
+        /* Footer */
+
+        footer {
+            text-align: center;
+            padding: 30px 15px;
+            color: #64748b;
+        }
+
+        /* Responsive */
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            nav {
+                padding: 20px;
+            }
+
+            .container {
+                margin: 20px;
+            }
+
+            button {
+                padding: 12px 18px;
+            }
+        }

@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Traffic Light Simulator</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+        <div class="logo">🚦 SmartTraffic</div>
+        <!-- <span>Traffic Management System</span> -->
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+        <h1>Smart <span>Traffic Light</span> System</h1>
+
+        <p>
+            Control traffic signals with a simple click.
+            <br>
+            Learn how traffic lights work using JavaScript.
+        </p>
+    </section>
+
+    <!-- Main Traffic Light -->
+
+    <div class="container">
+
+        <h2>Traffic Signal Control</h2>
+
+        <div class="traffic-light">
+
+            <div class="light red" id="redLight"></div>
+
+            <div class="light yellow" id="yellowLight"></div>
+
+            <div class="light green" id="greenLight"></div>
+
+        </div>
+
+        <!-- Status Message -->
+
+        <div class="status">
+
+            <h2 id="statusText">Traffic Signal is OFF</h2>
+
+            <p id="statusMessage">
+                Select a traffic light to start.
+            </p>
+
+        </div>
+
+        <!-- Control Buttons -->
+
+        <div class="buttons">
+
+            <button class="red-btn" onclick="changeLight('red')">
+                Red Light
+            </button>
+
+            <button class="yellow-btn" onclick="changeLight('yellow')">
+                Yellow Light
+            </button>
+
+            <button class="green-btn" onclick="changeLight('green')">
+                Green Light
+            </button>
+
+        </div>
+
+        <!-- Road -->
+
+        <div class="road">
+
+            <div class="road-line"></div>
+
+            <div class="car" id="car">🚗</div>
+
+        </div>
+
+    </div>
+
+ 
+
+    <script src="function.js"></script>
+
+</body>
+</html>
